@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="icon"
+			href="https://res.cloudinary.com/dgnb567j3/image/upload/v1701284872/Nairaland/favicon.png"
+			type="image/x-icon" />
+		<title>Dashboard</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<aside class="sidebar">
+				<div class="logo">
+					<a href="dashboard.html" id="postLink">₦airaland Forum</a>
+				</div>
+				<div class="topics">
+					<ul>
+						<div class="topic-header">Nairaland / General</div>
+						<li><a class="topic-point">Politics</a></li>
+						<li><a class="topic-point">Crime</a></li>
+						<li><a class="topic-point">Romance</a></li>
+						<li><a class="topic-point">Jobs/Vacancies</a></li>
+						<li><a class="topic-point">Career</a></li>
+						<li><a class="topic-point">Business</a></li>
+						<li><a class="topic-point">Investment</a></li>
+						<li><a class="topic-point">NYSC</a></li>
+						<li><a class="topic-point">Education</a></li>
+						<li><a class="topic-point">Auto</a></li>
+						<li><a class="topic-point">Car Talk</a></li>
+						<li><a class="topic-point">Properties</a></li>
+						<li><a class="topic-point">Health</a></li>
+						<li><a class="topic-point">Travel</a></li>
+						<li><a class="topic-point">Family</a></li>
+						<li><a class="topic-point">Culture</a></li>
+						<li><a class="topic-point">Religion</a></li>
+						<li><a class="topic-point">Food</a></li>
+						<li><a class="topic-point">Diaries</a></li>
+						<li><a class="topic-point">Nairaland Ads</a></li>
+						<li><a class="topic-point">Pets</a></li>
+						<li><a class="topic-point">Agriculture</a></li>
+						<li><a class="topic-point">Entertainment</a></li>
+						<li><a class="topic-point">Jokes</a></li>
+						<li><a class="topic-point">Tv/Movies</a></li>
+						<li><a class="topic-point">Music/Radio</a></li>
+						<li><a class="topic-point">Celebrities</a></li>
+						<li><a class="topic-point">Fashion</a></li>
+						<li><a class="topic-point">Events</a></li>
+						<li><a class="topic-point">Sports</a></li>
+						<li><a class="topic-point">Gaming</a></li>
+						<li><a class="topic-point">Forum Games</a></li>
+						<li><a class="topic-point">Literature</a></li>
+						<li><a class="topic-point">Science/Technology</a></li>
+						<li><a class="topic-point">Programming</a></li>
+						<li><a class="topic-point">Webmasters</a></li>
+						<li><a class="topic-point">Computers</a></li>
+						<li><a class="topic-point">Phones</a></li>
+						<li>
+							<a class="topic-point">Art, Graphics & Videos</a>
+						</li>
+						<li><a class="topic-point">Technology Market</a></li>
+					</ul>
+				</div>
+			</aside>
+			<main>
+				<div class="header">
+					<div class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+					<div class="welcome-text">Welcome to Nairaland Forum</div>
+
+					<div class="user-info">
+						<div class="notification"></div>
+						<img
+							src="https://res.cloudinary.com/dgnb567j3/image/upload/v1701076273/Nairaland/testuserimage.png"
+							class="userImg"
+							alt="post-image" />
+						<div class="username" id="usernamePlaceholder"></div>
+
+						<div class="userDropdown" id="userDropdown">
+							<ul>
+								<li>
+									<a href="#"
+										><img
+											src="https://res.cloudinary.com/dgnb567j3/image/upload/v1701219413/Nairaland/profile.svg"
+											alt="" />Profile</a
+									>
+								</li>
+								<li>
+									<a href="#" class="logout">Logout</a>
+								</li>
+								<li>
+									<a href="#" class="cancel">Cancel</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="searchArea">
+					<input
+						class="search"
+						type="text"
+						placeholder="Search topic" />
+					<div class="searchicon"></div>
+					<div class="tags">
+						<span class="tag">Explore</span>
+						<span class="tag">Community</span>
+						<span class="tag">Online stats</span>
+					</div>
+					<button
+						class="addtopic"
+						onclick="window.location.href='addtopic.html';">
+						<span class="start">+</span>
+						<span class="middle">Add Topic</span>
+					</button>
+				</div>
+
+				<button class="floatingBtn">
+					<a href="addtopic.html">+</a>
+				</button>
+
+				<div class="postarea">
+					<div class="postareahead">
+						<div class="left">
+							<span class="trending">Trending</span>
+							<span class="recent">Recent</span>
+							<span class="news">News</span>
+							<span class="latestnews">Latest News</span>
+						</div>
+						<span class="date" id="date-display"></span>
+					</div>
+
+					<div class="post">
+						<div class="mainpost">
+							<div class="posthead">
+								<img
+									src="https://res.cloudinary.com/dgnb567j3/image/upload/v1699603755/Nairaland/postImage.svg"
+									class="userimage" />
+								<h5 class="heading">
+									Rema's 'Calm Down' Becomes 1st Nigerian
+									Music Video To Reach 400M Views On YouTube
+								</h5>
+								<span class="views">5560</span>
+							</div>
+
+							<div class="postcontent">
+								<p class="content">
+									In a groundbreaking achievement, Rema's
+									music video for 'Calm Down' has become the
+									first-ever Nigerian music video to reach an
+									astounding 400 million views on YouTube.
+									Fans around the world are celebrating this
+									milestone, praising Rema for his talent and
+									the universal appeal of the hit song. The
+									video, known for its visually stunning
+									cinematography has captivated audiences
+									globally.......<a
+										href="post.html"
+										id="postLink"
+										>View post</a
+									>
+								</p>
+								<span class="username"
+									>Posted by Arcade414</span
+								>
+								<span class="duration">1 minute ago</span>
+							</div>
+
+							<div class="postfooter">
+								<div class="reactions">
+									<span class="like">126</span>
+									<span class="dislike">2</span>
+									<span class="comment">46</span>
+									<span class="share"></span>
+									<span class="others"></span>
+								</div>
+
+								<div class="post-tags">
+									<span class="p-tags">Music</span>
+									<span class="p-tags">Entertainment </span>
+									<span class="p-tags">Trending</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="mainpost">
+							<div class="posthead">
+								<img
+									src="https://res.cloudinary.com/dgnb567j3/image/upload/v1699603757/Nairaland/profileImage.svg"
+									class="userimage" />
+								<h5 class="heading">
+									Adele Announces Surprise Album Release and
+									World Tour
+								</h5>
+								<span class="views">2046</span>
+							</div>
+
+							<div class="postcontent">
+								<p class="content">
+									Adele, the Grammy-winning artist, has left
+									fans in awe with her latest masterpiece, the
+									highly anticipated album "Harmony." The
+									album features a captivating blend of
+									soulful melodies and powerful lyrics....<a
+										href="#"
+										id="postLink"
+										>View post</a
+									>
+								</p>
+								<span class="username">Posted by Jmoore</span>
+								<span class="duration">50 minute ago</span>
+							</div>
+
+							<div class="postfooter">
+								<div class="reactions">
+									<span class="like">79</span>
+									<span class="dislike">3</span>
+									<span class="comment">9</span>
+									<span class="share"></span>
+									<span class="others"></span>
+								</div>
+
+								<div class="post-tags">
+									<span class="p-tags">Entertainment</span>
+									<span class="p-tags">Music</span>
+									<span class="p-tags">Trending</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="mainpost">
+							<div class="posthead">
+								<img
+									src="https://res.cloudinary.com/dgnb567j3/image/upload/v1699603755/Nairaland/postImage.svg"
+									class="userimage" />
+								<h5 class="heading">
+									Taylor Swift Drops Surprise Single and Music
+									Video
+								</h5>
+								<span class="views">1509</span>
+							</div>
+
+							<div class="postcontent">
+								<p class="content">
+									Taylor Swift, the pop sensation, has stunned
+									fans with the unexpected release of her
+									latest single "Unseen Stars." Accompanied by
+									a visually captivating music video, the song
+									explores themes of resilience and
+									self-discovery. Swift's surprise drop has
+									set social media abuzz, and fans are eagerly
+									dissecting the lyrics and visuals for hidden
+									meanings.......<a href="#" id="postLink"
+										>View post</a
+									>
+								</p>
+								<span class="username"
+									>Posted by Entertain Insider</span
+								>
+								<span class="duration">2 hours ago</span>
+							</div>
+
+							<div class="postfooter">
+								<div class="reactions">
+									<span class="like">120</span>
+									<span class="dislike">5</span>
+									<span class="comment">20</span>
+									<span class="share"></span>
+									<span class="others"></span>
+								</div>
+
+								<div class="post-tags">
+									<span class="p-tags">Entertainment</span>
+									<span class="p-tags">Music</span>
+									<span class="p-tags">Trending</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="mainpost">
+							<div class="posthead">
+								<img
+									src="https://res.cloudinary.com/dgnb567j3/image/upload/v1699603755/Nairaland/postImage.svg"
+									class="userimage" />
+								<h5 class="heading">
+									Netflix's Latest Original Series Breaks
+									Streaming Records
+								</h5>
+								<span class="views">1260</span>
+							</div>
+
+							<div class="postcontent">
+								<p class="content">
+									Netflix's newest original series, "Echoes of
+									Eternity," has become an instant hit,
+									breaking streaming records within its first
+									week of release. The psychological thriller
+									has captivated audiences with its gripping
+									storyline and stellar performances. Fans are
+									praising the show for its suspenseful twists
+									and provoking narrative.......<a
+										href="#"
+										id="postLink"
+										>View post</a
+									>
+								</p>
+								<span class="username">Posted by Diran_x</span>
+								<span class="duration">2 hours ago</span>
+							</div>
+
+							<div class="postfooter">
+								<div class="reactions">
+									<span class="like">200</span>
+									<span class="dislike">29</span>
+									<span class="comment">6</span>
+									<span class="share"></span>
+									<span class="others"></span>
+								</div>
+
+								<div class="post-tags">
+									<span class="p-tags">Entertainment</span>
+									<span class="p-tags">Trending</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="mainpost">
+							<div class="posthead">
+								<img
+									src="https://res.cloudinary.com/dgnb567j3/image/upload/v1699603755/Nairaland/postImage.svg"
+									class="userimage" />
+								<h5 class="heading">
+									Radio Station Unveils New Morning Show Host
+								</h5>
+								<span class="views">390</span>
+							</div>
+
+							<div class="postcontent">
+								<p class="content">
+									Exciting news for radio enthusiasts! XYZ
+									Radio has announced a fresh addition to its
+									lineup with the introduction of a new
+									morning show host. The charismatic host,
+									known for their wit and humor, is set to
+									bring a lively and entertaining start to
+									listeners' mornings. Tune in for a blend of
+									music, news, and engaging
+									discussions.......<a href="#" id="postLink"
+										>View post</a
+									>
+								</p>
+								<span class="username">Posted by Randy210</span>
+								<span class="duration">18 hours ago</span>
+							</div>
+
+							<div class="postfooter">
+								<div class="reactions">
+									<span class="like">20</span>
+									<span class="dislike">2</span>
+									<span class="comment">1</span>
+									<span class="share"></span>
+									<span class="others"></span>
+								</div>
+
+								<div class="post-tags">
+									<span class="p-tags">Radio</span>
+									<span class="p-tags">Entertainment</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="mainpost">
+							<div class="posthead">
+								<img
+									src="https://res.cloudinary.com/dgnb567j3/image/upload/v1699603755/Nairaland/postImage.svg"
+									class="userimage" />
+								<h5 class="heading">
+									Emerging Artist Takes the Music Scene by
+									Storm
+								</h5>
+								<span class="views">2046</span>
+							</div>
+
+							<div class="postcontent">
+								<p class="content">
+									Meet the newest sensation in the music
+									industry! Rising star, Blue, is making waves
+									with their debut single "Eclipse." The
+									track, known for its unique sound and
+									soulful lyrics, has garnered attention from
+									both fans and critics alike. Keep an eye on
+									this talented artist as they embark on a
+									promising musical journey.......<a
+										href="#"
+										id="postLink"
+										>View post</a
+									>
+								</p>
+								<span class="username"
+									>Posted by Music Maven</span
+								>
+								<span class="duration">7 hours ago</span>
+							</div>
+
+							<div class="postfooter">
+								<div class="reactions">
+									<span class="like">90</span>
+									<span class="dislike">2</span>
+									<span class="comment">17</span>
+									<span class="share"></span>
+									<span class="others"></span>
+								</div>
+
+								<div class="post-tags">
+									<span class="p-tags">Entertainment</span>
+									<span class="p-tags">Music</span>
+									<span class="p-tags">Trending</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="mainpost">
+							<div class="posthead">
+								<img
+									src="https://res.cloudinary.com/dgnb567j3/image/upload/v1699603755/Nairaland/postImage.svg"
+									class="userimage" />
+								<h5 class="heading">
+									Podcast Series Explores Latest Entertainment
+									Trends
+								</h5>
+								<span class="views">2046</span>
+							</div>
+
+							<div class="postcontent">
+								<p class="content">
+									Lorem ipsum dolor sit amet consectetur.
+									Metus suspendisse in odio vulputate placerat
+									egestas sit facilisis. Mattis sollicitudin
+									eu congue pharetra......<a
+										href="#"
+										id="postLink"
+										>View post</a
+									>
+								</p>
+								<span class="username"
+									>Posted by Podcast Enthusiast</span
+								>
+								<span class="duration">6 hours ago</span>
+							</div>
+
+							<div class="postfooter">
+								<div class="reactions">
+									<span class="like">110</span>
+									<span class="dislike">1</span>
+									<span class="comment">32</span>
+									<span class="share"></span>
+									<span class="others"></span>
+								</div>
+
+								<div class="post-tags">
+									<span class="p-tags">Podcast</span>
+									<span class="p-tags">Entertainment</span>
+									<span class="p-tags">Trending</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="loadMore">
+						<span class="load"><a href="#">Load more...</a></span>
+					</div>
+				</div>
+
+				<footer>
+					<div class="footerhead">
+						<div class="footerlogo">₦airaland Forum</div>
+						<div class="policies">
+							<span
+								><a href="#"
+									>How to place an advert on Nairaland</a
+								></span
+							>
+							<span><a href="#">Terms of services</a></span>
+							<span><a href="#">Privacy policy</a></span>
+						</div>
+					</div>
+
+					<div class="socials">
+						<img
+							src="https://res.cloudinary.com/dgnb567j3/image/upload/v1699603756/Nairaland/twitterIcon.svg"
+							alt="Twitter" />
+						<img
+							src="https://res.cloudinary.com/dgnb567j3/image/upload/v1699603757/Nairaland/facebookIcon.svg"
+							alt="Twitter" />
+					</div>
+
+					<span class="disclaimer"
+						>Disclaimer: Every Nairaland member is solely
+						responsible for anything that he/she posts or upload on
+						Nairaland.</span
+					>
+					<div class="copyright">
+						© 2023 Nairaland.com by Oluwadara
+					</div>
+				</footer>
+			</main>
+		</div>
+
+		<div class="loaderContainer">
+			<div class="loader"></div>
+		</div>
+
+		<script src="app.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				// Hide the loaderContainer and display the main container after a delay of 2 seconds
+				setTimeout(function () {
+					document.querySelector(".loaderContainer").style.display =
+						"none";
+					document.querySelector(".container").style.display = "flex";
+				}, 2000);
+
+				// Set the username dynamically
+				const usernameElement = document.querySelector(
+					"#usernamePlaceholder"
+				);
+				if (usernameElement) {
+					usernameElement.innerText = "testuser";
+				}
+
+				// Get references to userDropdown, userImage, logoutButton, and cancelButton
+				const userDropdown = document.getElementById("userDropdown");
+				const userImage = document.querySelector(".userImg");
+				const logoutButton = document.querySelector(".logout");
+				const cancelButton = document.querySelector(".cancel");
+
+				// Toggle visibility of userDropdown when clicking on userImage
+				userImage.addEventListener("click", () => {
+					userDropdown.style.display =
+						userDropdown.style.display === "flex" ? "none" : "flex";
+				});
+
+				// Redirect to index.html when clicking on logoutButton
+				logoutButton.addEventListener("click", () => {
+					window.location.href = "index.html";
+				});
+
+				// Hide the userDropdown when clicking on cancelButton
+				cancelButton.addEventListener("click", () => {
+					userDropdown.style.display = "none";
+				});
+			});
+		</script>
+	</body>
+</html>

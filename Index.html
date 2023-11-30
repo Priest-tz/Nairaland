@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link
+			rel="icon"
+			href="https://res.cloudinary.com/dgnb567j3/image/upload/v1701284872/Nairaland/favicon.png"
+			type="image/x-icon" />
+		<title>Login</title>
+	</head>
+	<body>
+		<div class="regContainer" id="loginContainer">
+			<div class="reg">
+				<div class="regLogo">₦airaland Forum</div>
+				<span class="regSlogan">
+					Welcome back to the land of great knowledge and voices
+				</span>
+
+				<form id="loginForm">
+					<input
+						type="text"
+						class="username"
+						placeholder="Name, Username" />
+					<input
+						type="password"
+						class="password"
+						placeholder="Password" />
+
+					<div class="checkboxContainer">
+						<label for="">
+							<input type="checkbox" class="checkbox" />
+							Keep me logged in
+						</label>
+					</div>
+
+					<button class="Submit" type="submit">Login</button>
+					<a href="#">Forgotten password?</a>
+				</form>
+
+				<div class="footer">
+					<a class="signuptag" href="signup.html">Sign up</a>
+
+					<div class="country">
+						<img
+							src="https://res.cloudinary.com/dgnb567j3/image/upload/v1700277088/Nairaland/flag.svg"
+							alt="country flag"
+							width="20px" />
+						<a href="#">Nigeria</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="regImage">
+				<img
+					src="https://res.cloudinary.com/dgnb567j3/image/upload/v1700134404/Nairaland/Registration_image.png"
+					alt="regImage" />
+			</div>
+		</div>
+
+		<div class="indexLoaderOverlay">
+			<span class="staticSpan">₦</span>
+			<span class="dynamicSpan">airaland</span>
+		</div>
+
+		<script src="app.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const indexLoaderOverlay = document.querySelector(
+					".indexLoaderOverlay"
+				);
+				const mainContent = document.querySelector("#loginContainer");
+
+				// Check if the code has already been executed
+				const codeExecuted = sessionStorage.getItem("codeExecuted");
+
+				if (!codeExecuted) {
+					// Code has not been executed, execute it
+
+					mainContent.style.display = "none";
+
+					setTimeout(() => {
+						indexLoaderOverlay.style.display = "none";
+						mainContent.style.display = "flex";
+
+						// Set the flag in sessionStorage to indicate that the code has been executed
+						sessionStorage.setItem("codeExecuted", true);
+					}, 3000);
+				} else {
+					// Code has already been executed, skip it
+					indexLoaderOverlay.style.display = "none";
+					mainContent.style.display = "flex";
+				}
+
+				function validateLogin(event) {
+					event.preventDefault();
+
+					const testUsername = "testuser";
+					const testPassword = "testpassword";
+
+					const usernameInput =
+						document.querySelector(".username").value;
+					const passwordInput =
+						document.querySelector(".password").value;
+
+					if (
+						usernameInput === testUsername &&
+						passwordInput === testPassword
+					) {
+						// Redirect to the dashboard.html page
+						window.location.href = "dashboard.html";
+					}
+				}
+
+				// Attach the event listener to the form
+				const loginForm = document.getElementById("loginForm");
+				loginForm.addEventListener("submit", validateLogin);
+			});
+		</script>
+	</body>
+</html>
