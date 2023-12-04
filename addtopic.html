@@ -127,103 +127,115 @@
 					</button>
 				</div>
 
-				<div class="modal">
-					<div class="topicAdd">
-						<div class="tagHeader">
-							<span class="first">Topic Tags</span>
-							<span class="second close">Cancel</span>
+				<div class="topicAdd">
+					<div class="tagHeader">
+						<span class="first">Topic Tags</span>
+					</div>
+
+					<div class="inputTags">
+						<input
+							type="text"
+							class="tagInput"
+							placeholder="Maximum of 4 tags" />
+
+						<div class="tags">
+							<button class="addtopic">
+								<span class="middle">Investment</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Crime</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">TV/Movies</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Politics</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Fashion</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Events</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Career</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Sports</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Programming</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Music/Radio</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Business</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Employment</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Roles</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Culture</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Job/Vacancies</span>
+								<span class="start">+</span>
+							</button>
 						</div>
 
-						<div class="inputTags">
-							<input
-								type="text"
-								class="tagInput"
-								placeholder="Maximum of 4 tags" />
+						<button class="moreTags">See More Tags</button>
+					</div>
 
-							<div class="tags">
-								<button class="addtopic">
-									<span class="middle">Investment</span>
-									<span class="start">+</span>
-								</button>
+					<div class="body">
+						<div class="headlineHeader">Topic Headline</div>
 
-								<button class="addtopic">
-									<span class="middle">Crime</span>
-									<span class="start">+</span>
-								</button>
+						<input
+							type="text"
+							class="headline"
+							placeholder="Enter Headline " />
 
-								<button class="addtopic">
-									<span class="middle">TV/Movies</span>
-									<span class="start">+</span>
-								</button>
+						<textarea
+							cols="50"
+							rows="10"
+							placeholder="Enter Details"></textarea>
 
-								<button class="addtopic">
-									<span class="middle">Politics</span>
-									<span class="start">+</span>
-								</button>
+						<span class="foot"
+							>Please Observe The Following Rules</span
+						>
 
-								<button class="addtopic">
-									<span class="middle">Fashion</span>
-									<span class="start">+</span>
-								</button>
-
-								<button class="addtopic">
-									<span class="middle">Events</span>
-									<span class="start">+</span>
-								</button>
-
-								<button class="addtopic">
-									<span class="middle">Career</span>
-									<span class="start">+</span>
-								</button>
-
-								<button class="addtopic">
-									<span class="middle">Sports</span>
-									<span class="start">+</span>
-								</button>
-
-								<button class="addtopic">
-									<span class="middle">Programming</span>
-									<span class="start">+</span>
-								</button>
-
-								<button class="addtopic">
-									<span class="middle">Music/Radio</span>
-									<span class="start">+</span>
-								</button>
-
-								<button class="addtopic">
-									<span class="middle">Business</span>
-									<span class="start">+</span>
-								</button>
-
-								<button class="addtopic">
-									<span class="middle">Job/Vacancies</span>
-									<span class="start">+</span>
-								</button>
-							</div>
-
-							<button class="moreTags">See More Tags</button>
-						</div>
-
-						<div class="body">
-							<div class="headlineHeader">Topic Headline</div>
-
-							<input
-								type="text"
-								class="headline"
-								placeholder="Enter Headline " />
-
-							<textarea
-								cols="50"
-								rows="10"
-								placeholder="Enter Details"></textarea>
-
-							<span class="foot"
-								>Please Observe The Following Rules</span
-							>
-
-							<button class="commentSubmit">Submit</button>
-						</div>
+						<button class="commentSubmit">Submit</button>
 					</div>
 				</div>
 
@@ -259,6 +271,15 @@
 						© 2023 Nairaland.com by Oluwadara
 					</div>
 				</footer>
+
+				<div id="popOverlay" class="popOverlay">
+					<div id="popModal" class="popModal">
+						<img
+							src="https://res.cloudinary.com/dgnb567j3/image/upload/v1701082388/Nairaland/checkMark.svg"
+							alt="" />
+						<p id="popMessage">Registration successful</p>
+					</div>
+				</div>
 			</main>
 		</div>
 
@@ -305,6 +326,46 @@
 				cancelButton.addEventListener("click", () => {
 					userDropdown.style.display = "none";
 				});
+
+				const popOverlay = document.getElementById("popOverlay");
+				const popModal = document.getElementById("popModal");
+				const popMessage = document.getElementById("popMessage");
+				const headlineInput = document.querySelector(".headline");
+				const detailsTextarea = document.querySelector("textarea");
+				const commentSubmitButton =
+					document.querySelector(".commentSubmit");
+
+				function showPopup(message) {
+					popOverlay.style.display = "block";
+					popMessage.textContent = message;
+
+					// Automatically hide the popup after 4 seconds
+					setTimeout(hidePopup, 4000);
+				}
+
+				function hidePopup() {
+					popOverlay.style.display = "none";
+				}
+
+				function submitReply(event) {
+					event.preventDefault();
+
+					showPopup("Your Topic has been updated");
+
+					if (headlineInput && detailsTextarea) {
+						// Additional logic to handle the updated topic data
+						const updatedHeadline = headlineInput.value;
+						const updatedDetails = detailsTextarea.value;
+
+						// Clear the headline input and details textarea
+						headlineInput.value = "";
+						detailsTextarea.value = "";
+					}
+				}
+
+				if (commentSubmitButton) {
+					commentSubmitButton.addEventListener("click", submitReply);
+				}
 			});
 		</script>
 	</body>
