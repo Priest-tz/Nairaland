@@ -9,6 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	hamburger.addEventListener("click", () => {
 		sidebarMenu.classList.toggle("active");
 		hamburger.classList.toggle("active");
+
+		document.body.style.overflow = sidebarMenu.classList.contains("active")
+			? "hidden"
+			: "auto";
 	});
 
 	// Remove "active" class from the sidebar and hamburger when a topic point is clicked
