@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet" />
+		<link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+		<title>Add Topic</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<aside class="sidebar">
+				<div class="logo">
+					<a href="dashboard.html" id="postLink">₦airaland Forum</a>
+				</div>
+				<div class="topics">
+					<ul>
+						<div class="topic-header">Nairaland / General</div>
+						<li><a class="topic-point">Politics</a></li>
+						<li><a class="topic-point">Crime</a></li>
+						<li><a class="topic-point">Romance</a></li>
+						<li><a class="topic-point">Jobs/Vacancies</a></li>
+						<li><a class="topic-point">Career</a></li>
+						<li><a class="topic-point">Business</a></li>
+						<li><a class="topic-point">Investment</a></li>
+						<li><a class="topic-point">NYSC</a></li>
+						<li><a class="topic-point">Education</a></li>
+						<li><a class="topic-point">Auto</a></li>
+						<li><a class="topic-point">Car Talk</a></li>
+						<li><a class="topic-point">Properties</a></li>
+						<li><a class="topic-point">Health</a></li>
+						<li><a class="topic-point">Travel</a></li>
+						<li><a class="topic-point">Family</a></li>
+						<li><a class="topic-point">Culture</a></li>
+						<li><a class="topic-point">Religion</a></li>
+						<li><a class="topic-point">Food</a></li>
+						<li><a class="topic-point">Diaries</a></li>
+						<li><a class="topic-point">Nairaland Ads</a></li>
+						<li><a class="topic-point">Pets</a></li>
+						<li><a class="topic-point">Agriculture</a></li>
+						<li><a class="topic-point">Entertainment</a></li>
+						<li><a class="topic-point">Jokes</a></li>
+						<li><a class="topic-point">Tv/Movies</a></li>
+						<li><a class="topic-point">Music/Radio</a></li>
+						<li><a class="topic-point">Celebrities</a></li>
+						<li><a class="topic-point">Fashion</a></li>
+						<li><a class="topic-point">Events</a></li>
+						<li><a class="topic-point">Sports</a></li>
+						<li><a class="topic-point">Gaming</a></li>
+						<li><a class="topic-point">Forum Games</a></li>
+						<li><a class="topic-point">Literature</a></li>
+						<li><a class="topic-point">Science/Technology</a></li>
+						<li><a class="topic-point">Programming</a></li>
+						<li><a class="topic-point">Webmasters</a></li>
+						<li><a class="topic-point">Computers</a></li>
+						<li><a class="topic-point">Phones</a></li>
+						<li>
+							<a class="topic-point">Art, Graphics & Videos</a>
+						</li>
+						<li><a class="topic-point">Technology Market</a></li>
+					</ul>
+				</div>
+			</aside>
+
+			<main>
+				<div class="header">
+					<div class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+					<div class="welcome-text">Welcome to Nairaland Forum</div>
+
+					<div class="user-info">
+						<div class="notification"></div>
+						<img
+							src="./images/postImage.svg"
+							class="userImg"
+							alt="post-image" />
+						<div class="username" id="usernamePlaceholder"></div>
+
+						<div class="userDropdown" id="userDropdown">
+							<ul>
+								<li>
+									<a href="#"
+										><img
+											src="./images/profile.svg"
+											alt="" />Profile</a
+									>
+								</li>
+								<li>
+									<a href="#" class="logout">Logout</a>
+								</li>
+								<li>
+									<a href="#" class="cancel">Cancel</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="searchArea">
+					<input
+						class="search"
+						type="text"
+						placeholder="Search topic" />
+					<div class="searchicon"></div>
+					<div class="tags">
+						<span class="tag">Explore</span>
+						<span class="tag">Community</span>
+						<span class="tag">Online stats</span>
+					</div>
+					<button
+						class="addtopic"
+						onclick="window.location.href='addtopic.html';">
+						<span class="start">+</span>
+						<span class="middle">Add Topic</span>
+					</button>
+				</div>
+
+				<div class="topicAdd">
+					<div class="tagHeader">
+						<span class="first">Topic Tags</span>
+					</div>
+
+					<div class="inputTags">
+						<input
+							type="text"
+							class="tagInput"
+							placeholder="Maximum of 4 tags" />
+
+						<div class="tags">
+							<button class="addtopic">
+								<span class="middle">Investment</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Crime</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">TV/Movies</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Politics</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Fashion</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Events</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Career</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Sports</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Programming</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Music/Radio</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Business</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Employment</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Roles</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Culture</span>
+								<span class="start">+</span>
+							</button>
+
+							<button class="addtopic">
+								<span class="middle">Job/Vacancies</span>
+								<span class="start">+</span>
+							</button>
+						</div>
+
+						<div class="seeMore">
+							<button class="moreTags">See More Tags</button>
+						</div>
+					</div>
+
+					<div class="body">
+						<div class="headlineHeader">Topic Headline</div>
+
+						<div class="inputArea">
+							<input
+								type="text"
+								class="headline"
+								placeholder="Enter Headline " />
+
+							<textarea
+								cols="50"
+								rows="10"
+								placeholder="Enter Details"></textarea>
+
+							<div class="inputFoot">
+								<button class="commentSubmit">Submit</button>
+
+								<span class="foot"
+									>Please Observe The Following Rules</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<footer>
+					<div class="footerhead">
+						<div class="footerlogo">₦airaland Forum</div>
+						<div class="policies">
+							<span
+								><a href="#"
+									>How to place an advert on Nairaland</a
+								></span
+							>
+							<span><a href="#">Terms of services</a></span>
+							<span><a href="#">Privacy policy</a></span>
+						</div>
+					</div>
+
+					<div class="socials">
+						<img
+							src="https://res.cloudinary.com/dgnb567j3/image/upload/v1699603756/Nairaland/twitterIcon.svg"
+							alt="Twitter" />
+						<img
+							src="https://res.cloudinary.com/dgnb567j3/image/upload/v1699603757/Nairaland/facebookIcon.svg"
+							alt="Twitter" />
+					</div>
+
+					<span class="disclaimer"
+						>Disclaimer: Every Nairaland member is solely
+						responsible for anything that he/she posts or upload on
+						Nairaland.</span
+					>
+					<div class="copyright">
+						© 2023 Nairaland.com by Oluwadara
+					</div>
+				</footer>
+
+				<div id="popOverlay" class="popOverlay">
+					<div id="popModal" class="popModal">
+						<img
+							src="https://res.cloudinary.com/dgnb567j3/image/upload/v1701082388/Nairaland/checkMark.svg"
+							alt="" />
+						<p id="popMessage">Registration successful</p>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<div class="loaderContainer">
+			<div class="loader"></div>
+		</div>
+
+		<script src="app.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				// Hide the loaderContainer and display the main container after a delay of 2 seconds
+				setTimeout(function () {
+					document.querySelector(".loaderContainer").style.display =
+						"none";
+					document.querySelector(".container").style.display = "flex";
+				}, 2000);
+
+				// Set the username dynamically
+				const usernameElement = document.querySelector(
+					"#usernamePlaceholder"
+				);
+				if (usernameElement) {
+					usernameElement.innerText = "testuser";
+				}
+
+				// Get references to userDropdown, userImage, logoutButton, and cancelButton
+				const userDropdown = document.getElementById("userDropdown");
+				const userImage = document.querySelector(".userImg");
+				const logoutButton = document.querySelector(".logout");
+				const cancelButton = document.querySelector(".cancel");
+
+				// Toggle visibility of userDropdown when clicking on userImage
+				userImage.addEventListener("click", () => {
+					userDropdown.style.display =
+						userDropdown.style.display === "flex" ? "none" : "flex";
+				});
+
+				// Redirect to index.html when clicking on logoutButton
+				logoutButton.addEventListener("click", () => {
+					window.location.href = "index.html";
+				});
+
+				// Hide the userDropdown when clicking on cancelButton
+				cancelButton.addEventListener("click", () => {
+					userDropdown.style.display = "none";
+				});
+
+				const popOverlay = document.getElementById("popOverlay");
+				const popModal = document.getElementById("popModal");
+				const popMessage = document.getElementById("popMessage");
+				const headlineInput = document.querySelector(".headline");
+				const detailsTextarea = document.querySelector("textarea");
+				const commentSubmitButton =
+					document.querySelector(".commentSubmit");
+
+				function showPopup(message) {
+					popOverlay.style.display = "block";
+					popMessage.textContent = message;
+
+					// Automatically hide the popup after 4 seconds
+					setTimeout(hidePopup, 4000);
+				}
+
+				function hidePopup() {
+					popOverlay.style.display = "none";
+				}
+
+				function submitReply(event) {
+					event.preventDefault();
+
+					showPopup("Your Topic has been updated");
+
+					if (headlineInput && detailsTextarea) {
+						// Additional logic to handle the updated topic data
+						const updatedHeadline = headlineInput.value;
+						const updatedDetails = detailsTextarea.value;
+
+						// Clear the headline input and details textarea
+						headlineInput.value = "";
+						detailsTextarea.value = "";
+					}
+				}
+
+				if (commentSubmitButton) {
+					commentSubmitButton.addEventListener("click", submitReply);
+				}
+			});
+		</script>
+	</body>
+</html>

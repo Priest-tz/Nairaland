@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet" />
+		<link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+		<title>Post</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<aside class="sidebar">
+				<div class="logo">
+					<a href="dashboard.html" id="postLink">₦airaland Forum</a>
+				</div>
+				<div class="topics">
+					<ul>
+						<div class="topic-header">Nairaland / General</div>
+						<li><a class="topic-point">Politics</a></li>
+						<li><a class="topic-point">Crime</a></li>
+						<li><a class="topic-point">Romance</a></li>
+						<li><a class="topic-point">Jobs/Vacancies</a></li>
+						<li><a class="topic-point">Career</a></li>
+						<li><a class="topic-point">Business</a></li>
+						<li><a class="topic-point">Investment</a></li>
+						<li><a class="topic-point">NYSC</a></li>
+						<li><a class="topic-point">Education</a></li>
+						<li><a class="topic-point">Auto</a></li>
+						<li><a class="topic-point">Car Talk</a></li>
+						<li><a class="topic-point">Properties</a></li>
+						<li><a class="topic-point">Health</a></li>
+						<li><a class="topic-point">Travel</a></li>
+						<li><a class="topic-point">Family</a></li>
+						<li><a class="topic-point">Culture</a></li>
+						<li><a class="topic-point">Religion</a></li>
+						<li><a class="topic-point">Food</a></li>
+						<li><a class="topic-point">Diaries</a></li>
+						<li><a class="topic-point">Nairaland Ads</a></li>
+						<li><a class="topic-point">Pets</a></li>
+						<li><a class="topic-point">Agriculture</a></li>
+						<li><a class="topic-point">Entertainment</a></li>
+						<li><a class="topic-point">Jokes</a></li>
+						<li><a class="topic-point">Tv/Movies</a></li>
+						<li><a class="topic-point">Music/Radio</a></li>
+						<li><a class="topic-point">Celebrities</a></li>
+						<li><a class="topic-point">Fashion</a></li>
+						<li><a class="topic-point">Events</a></li>
+						<li><a class="topic-point">Sports</a></li>
+						<li><a class="topic-point">Gaming</a></li>
+						<li><a class="topic-point">Forum Games</a></li>
+						<li><a class="topic-point">Literature</a></li>
+						<li><a class="topic-point">Science/Technology</a></li>
+						<li><a class="topic-point">Programming</a></li>
+						<li><a class="topic-point">Webmasters</a></li>
+						<li><a class="topic-point">Computers</a></li>
+						<li><a class="topic-point">Phones</a></li>
+						<li>
+							<a class="topic-point">Art, Graphics & Videos</a>
+						</li>
+						<li><a class="topic-point">Technology Market</a></li>
+					</ul>
+				</div>
+			</aside>
+
+			<main>
+				<div class="header">
+					<div class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+					<div class="welcome-text">Welcome to Nairaland Forum</div>
+
+					<div class="user-info">
+						<div class="notification"></div>
+						<img
+							src="./images//testuserimage.png"
+							class="userImg"
+							alt="post-image" />
+						<div class="username" id="usernamePlaceholder"></div>
+
+						<div class="userDropdown" id="userDropdown">
+							<ul>
+								<li>
+									<a href="#"
+										><img
+											src="./images//profile.svg"
+											alt="" />Profile</a
+									>
+								</li>
+								<li>
+									<a href="#" class="logout">Logout</a>
+								</li>
+								<li>
+									<a href="#" class="cancel">Cancel</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="searchArea">
+					<input
+						class="search"
+						type="text"
+						placeholder="Search topic" />
+					<div class="searchicon"></div>
+					<div class="tags">
+						<span class="tag">Explore</span>
+						<span class="tag">Community</span>
+						<span class="tag">Online stats</span>
+					</div>
+					<button
+						class="addtopic"
+						onclick="window.location.href='addtopic.html';">
+						<span class="start">+</span>
+						<span class="middle">Add Topic</span>
+					</button>
+				</div>
+
+				<button class="floatingBtn">
+					<a href="addtopic.html">+</a>
+				</button>
+
+				<div class="postarea">
+					<div class="postareahead">
+						<div class="left">
+							<span class="postName">Posted by testuser</span>
+							<span class="postDuration">50 minutes ago</span>
+						</div>
+						<span class="date" id="date-display"></span>
+					</div>
+
+					<div class="post">
+						<div class="mainpost">
+							<div class="posthead">
+								<img
+									src="./images//postImage.svg"
+									class="userimage" />
+								<h5 class="heading">
+									Rema's 'Calm Down' Becomes 1st Nigerian
+									Music Video To Reach 400M Views On YouTube
+								</h5>
+								<span class="views">2046</span>
+							</div>
+
+							<div class="postcontent">
+								<p class="content">
+									In a monumental achievement for Nigerian
+									music, Rema's sensational music video for
+									'Calm Down' has etched its name in the
+									history books by becoming the first-ever
+									Nigerian music video to achieve a remarkable
+									400 million views on YouTube. Released just
+									over a year ago, 'Calm Down' has taken the
+									global music scene by storm, showcasing not
+									only Rema's prodigious talent but also the
+									expanding international appeal of Afrobeat.
+									The visually stunning music video, directed
+									by a renowned filmmaker, has garnered praise
+									for its artistic brilliance and innovative
+									storytelling. Rema, the young and dynamic
+									artist, expressed his gratitude to fans
+									worldwide for their unwavering support. In a
+									recent statement, he said, "This milestone
+									is not just mine; it belongs to every fan,
+									every supporter who believed in the music.
+									It's a win for Nigerian music on the global
+									stage." The news has sparked celebrations on
+									social media, with fans using hashtags like
+									#CalmDown400M to share their excitement and
+									congratulate Rema on this historic
+									achievement. Industry insiders and fellow
+									artists have also commended Rema for
+									breaking barriers and setting new standards
+									in the music industry. The success of 'Calm
+									Down' reaffirms the impact of Nigerian
+									artists on the international stage and paves
+									the way for more global recognition. As the
+									music video continues to attract views from
+									around the world, 'Calm Down' stands as a
+									testament to the power of Nigerian music to
+									transcend borders and connect with audiences
+									globally.
+								</p>
+								<div class="postImages">
+									<img src="./images//Rema1.jpg" alt="" />
+									<img src="./images//Rema2.jpg" alt="" />
+								</div>
+							</div>
+
+							<div class="postfooter">
+								<div class="reactions">
+									<span class="like">56</span>
+									<span class="dislike">1</span>
+									<span class="comment">46</span>
+									<span class="share"></span>
+									<span class="others"></span>
+								</div>
+
+								<div class="spost-tags">
+									<span class="p-tags">Entertainment</span>
+									<span class="p-tags">Music/Radio</span>
+									<span class="p-tags">Trending</span>
+								</div>
+							</div>
+
+							<div class="textarea">
+								<textarea
+									name="commentbox"
+									id="commentbox"
+									cols="30"
+									rows="10"
+									placeholder="Comment"></textarea>
+								<button class="commentSubmit">Submit</button>
+							</div>
+						</div>
+
+						<div class="comments">
+							<div class="commentsHead">
+								<span class="head">
+									<span class="first-part"
+										>Replies And Quotes:</span
+									>
+									<span class="second-part">
+										Rema's 'Calm Down' Becomes 1st Nigerian
+										Music Video To Reach 400M Views On
+										YouTube</span
+									>
+								</span>
+							</div>
+
+							<div class="commentBody">
+								<div class="posthead">
+									<img
+										src="./images/postImage.svg"
+										class="userimage" />
+									<h5 class="heading">MusicLover23</h5>
+									<span class="views">20 mins</span>
+								</div>
+
+								<div class="postcontent">
+									<p class="content">
+										Wow, Rema's 'Calm Down' is truly a
+										masterpiece! 400 million views on
+										YouTube is a well-deserved achievement.
+										The visuals and the beats are just
+										unmatched. Congratulations to Rema!
+									</p>
+								</div>
+
+								<div class="postfooter">
+									<div class="reactions">
+										<span class="like">6</span>
+										<span class="dislike">1</span>
+										<span class="comment">2</span>
+										<span class="share"></span>
+										<span class="others"></span>
+									</div>
+								</div>
+								<div class="textarea">
+									<textarea
+										name="commentbox"
+										id=""
+										cols="30"
+										rows="10"
+										placeholder="Reply"></textarea>
+									<button class="commentSubmit">
+										Submit
+									</button>
+								</div>
+							</div>
+
+							<div class="commentBody">
+								<div class="posthead">
+									<img
+										src="./images/postImage.svg"
+										class="userimage" />
+									<h5 class="heading">AfroVibesFanatic</h5>
+									<span class="views">26 mins</span>
+								</div>
+
+								<div class="postcontent">
+									<p class="content">
+										Rema is taking Nigerian music to new
+										heights! 'Calm Down' hitting 400 million
+										views is a testament to the global
+										appeal of Afrobeat. This track is pure
+										fire, and the visuals are simply
+										mind-blowing. Big congrats, Rema!
+									</p>
+								</div>
+
+								<div class="postfooter">
+									<div class="reactions">
+										<span class="like">4</span>
+										<span class="dislike">3</span>
+										<span class="comment">3</span>
+										<span class="share"></span>
+										<span class="others"></span>
+									</div>
+								</div>
+								<div class="textarea">
+									<textarea
+										name="commentbox"
+										id=""
+										cols="30"
+										rows="10"
+										placeholder="Reply"></textarea>
+									<button class="commentSubmit">
+										Submit
+									</button>
+								</div>
+							</div>
+
+							<div class="commentBody">
+								<div class="posthead">
+									<img
+										src="./images/postImage.svg"
+										class="userimage" />
+									<h5 class="heading">ViewCounterQueen</h5>
+									<span class="views">29 mins</span>
+								</div>
+
+								<div class="postcontent">
+									<p class="content">
+										Rema's 'Calm Down' breaking records left
+										and right! 400 million views? That's
+										insane! The song and video are so
+										addictive; I'm not surprised it reached
+										this milestone. Keep soaring, Rema!
+									</p>
+								</div>
+
+								<div class="Reply">
+									<div class="posthead">
+										<img
+											src="./images/postImage.svg"
+											class="userimage" />
+										<h5 class="heading">Giveon</h5>
+									</div>
+
+									<div class="postcontent">
+										<p class="content">
+											Oh, please! Rema's 'Calm Down' is
+											just another overhyped track. 400
+											million views don't necessarily mean
+											it's a masterpiece. There are other
+											artists out there with more
+											meaningful content. Views aren't
+											everything.
+										</p>
+									</div>
+								</div>
+
+								<div class="postfooter">
+									<div class="reactions">
+										<span class="like">56</span>
+										<span class="dislike">1</span>
+										<span class="comment">46</span>
+										<span class="share"></span>
+										<span class="others"></span>
+									</div>
+								</div>
+								<div class="textarea">
+									<textarea
+										name="commentbox"
+										id=""
+										cols="30"
+										rows="10"
+										placeholder="Reply"></textarea>
+									<button class="commentSubmit">
+										Submit
+									</button>
+								</div>
+							</div>
+
+							<div class="commentBody">
+								<div class="posthead">
+									<img
+										src="./images/postImage.svg"
+										class="userimage" />
+									<h5 class="heading">Trendsetter101</h5>
+									<span class="views">30 mins</span>
+								</div>
+
+								<div class="postcontent">
+									<p class="content">
+										Rema is setting the bar high for
+										Nigerian artists with 'Calm Down.' 400
+										million views on YouTube? That's not
+										just a milestone; it's a statement. The
+										music scene is evolving, and Rema is at
+										the forefront. Kudos!
+									</p>
+								</div>
+
+								<div class="postfooter">
+									<div class="reactions">
+										<span class="like">24</span>
+										<span class="dislike">4</span>
+										<span class="comment">2</span>
+										<span class="share"></span>
+										<span class="others"></span>
+									</div>
+								</div>
+								<div class="textarea">
+									<textarea
+										name="commentbox"
+										id=""
+										cols="30"
+										rows="10"
+										placeholder="Reply"></textarea>
+									<button class="commentSubmit">
+										Submit
+									</button>
+								</div>
+							</div>
+
+							<div class="commentBody">
+								<div class="posthead">
+									<img
+										src="./images/postImage.svg"
+										class="userimage" />
+									<h5 class="heading">
+										GlobalGroovesExplorer
+									</h5>
+									<span class="views">32 mins</span>
+								</div>
+
+								<div class="postcontent">
+									<p class="content">
+										As a music enthusiast, witnessing Rema's
+										'Calm Down' reaching 400 million views
+										is incredible! The fusion of Afrobeat
+										and contemporary vibes in this track is
+										unmatched. It's amazing to see Nigerian
+										music making such a global impact. Well
+										done, Rema!
+									</p>
+								</div>
+
+								<div class="postfooter">
+									<div class="reactions">
+										<span class="like">46</span>
+										<span class="dislike">1</span>
+										<span class="comment">2</span>
+										<span class="share"></span>
+										<span class="others"></span>
+									</div>
+								</div>
+								<div class="textarea">
+									<textarea
+										name="commentbox"
+										id=""
+										cols="30"
+										rows="10"
+										placeholder="Reply"></textarea>
+									<button class="commentSubmit">
+										Submit
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="loadMore">
+							<span class="load"
+								><a href="#">Load more...</a></span
+							>
+						</div>
+					</div>
+				</div>
+
+				<footer>
+					<div class="footerhead">
+						<div class="footerlogo">₦airaland Forum</div>
+						<div class="policies">
+							<span
+								><a href="#"
+									>How to place an advert on Nairaland</a
+								></span
+							>
+							<span><a href="#">Terms of services</a></span>
+							<span><a href="#">Privacy policy</a></span>
+						</div>
+					</div>
+
+					<div class="socials">
+						<img src="./images/twitterIcon.svg" alt="Twitter" />
+						<img src="./images//facebookIcon.svg" alt="facebook" />
+					</div>
+
+					<span class="disclaimer"
+						>Disclaimer: Every Nairaland member is solely
+						responsible for anything that he/she posts or upload on
+						Nairaland.</span
+					>
+					<div class="copyright">
+						© 2023 Nairaland.com by Oluwadara
+					</div>
+				</footer>
+
+				<div id="popOverlay" class="popOverlay">
+					<div id="popModal" class="popModal">
+						<img src="./images//checkMark.svg"" alt="" />
+
+						<p id="popMessage">Registration successful</p>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<div class="loaderContainer">
+			<div class="loader"></div>
+		</div>
+
+		<script src="app.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				// Hide the loaderContainer and display the main container after a delay of 2 seconds
+				setTimeout(function () {
+					document.querySelector(".loaderContainer").style.display =
+						"none";
+					document.querySelector(".container").style.display = "flex";
+				}, 2000);
+
+				// Set the username dynamically
+				const usernameElement = document.querySelector(
+					"#usernamePlaceholder"
+				);
+				if (usernameElement) {
+					usernameElement.innerText = "testuser";
+				}
+
+				// Get references to userDropdown, userImage, logoutButton, and cancelButton
+				const userDropdown = document.getElementById("userDropdown");
+				const userImage = document.querySelector(".userImg");
+				const logoutButton = document.querySelector(".logout");
+				const cancelButton = document.querySelector(".cancel");
+
+				// Toggle visibility of userDropdown when clicking on userImage
+				userImage.addEventListener("click", () => {
+					userDropdown.style.display =
+						userDropdown.style.display === "flex" ? "none" : "flex";
+				});
+
+				// Redirect to index.html when clicking on logoutButton
+				logoutButton.addEventListener("click", () => {
+					window.location.href = "index.html";
+				});
+
+				// Hide the userDropdown when clicking on cancelButton
+				cancelButton.addEventListener("click", () => {
+					userDropdown.style.display = "none";
+				});
+
+				const MESSAGE_TYPES = {
+					REPLY: "reply",
+				};
+
+				const popOverlay = document.getElementById("popOverlay");
+				const popModal = document.getElementById("popModal");
+				const popMessage = document.getElementById("popMessage");
+				const commentForm = document.getElementById("commentForm");
+				const commentBox = document.getElementById("commentbox");
+				const commentSubmitButton =
+					document.querySelector(".commentSubmit");
+
+				function showPopup(message) {
+					popOverlay.style.display = "block";
+					popMessage.textContent = message;
+
+					// Automatically hide the popup after 4 seconds
+					setTimeout(hidePopup, 4000);
+				}
+
+				function hidePopup() {
+					popOverlay.style.display = "none";
+				}
+
+				function submitReply(event) {
+					event.preventDefault();
+
+					showPopup("Reply sent");
+
+					if (commentBox) {
+						commentBox.value = "";
+					}
+				}
+
+				if (commentSubmitButton) {
+					commentSubmitButton.addEventListener("click", submitReply);
+				}
+
+				if (usernameElement) {
+					usernameElement.innerText = "testuser";
+				}
+			});
+		</script>
+	</body>
+</html>
